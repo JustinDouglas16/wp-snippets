@@ -1,0 +1,24 @@
+/*  dit is voor de post widget om de titel in de post widget te verkorten met een paar regels
+    dit gedaan door de category van de posts te nemen en attributes voor deze categories te plaatsen 
+    om erder inherit te worden bij alle pages met deze posts
+    dashboard ====> appereance ====> customize ====> additional css
+*/
+
+/*post artikel titel*/
+.category-nieuws .elementor-post__title a,
+.category-themas .elementor-post__title a, .category-bekendmaking .elementor-post__title a{
+	white-space: unset;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+/*post artikel titel*/
+.category-nieuws .elementor-post__title a,
+.category-themas .elementor-post__title a, .category-bekendmaking .elementor-post__title a{
+white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 11ch;  
+}
